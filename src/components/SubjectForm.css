@@ -1,0 +1,25 @@
+.subject-form {
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+.subject-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.subject-form button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.subject-card {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}

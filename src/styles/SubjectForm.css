@@ -1,0 +1,82 @@
+.subject-form{
+    width:400px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 12px rgba(0,0,0,.1);
+}
+
+.subject-form h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.subject-form input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+.subject-form button{
+    width:100%;
+    padding:12px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.subject-form button:hover{
+    background:#1d4ed8;
+}
+.subject-card{
+    margin-top:20px;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    background:#f8f9fa;
+}
+
+.subject-card h4{
+    margin-bottom:8px;
+    color:#2563eb;
+}
+
+.subject-card p{
+    margin:4px 0;
+}
+.subject-card {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.subject-card h4 {
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+.subject-card p {
+  margin: 4px 0;
+}
+.subject-card button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subject-card button:hover {
+  background: darkred;
+}

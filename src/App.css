@@ -1,0 +1,318 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* APP */
+
+.app {
+  min-height: 100vh;
+  padding-bottom: 60px;
+  background: #f5f7fb;
+  color: #1f2937;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* TITLE */
+
+.app > h1 {
+  margin: 0;
+  padding: 35px 20px;
+  text-align: center;
+  font-size: 36px;
+  color: #4f46e5;
+}
+
+.app > h2 {
+  text-align: center;
+  margin: 35px 0 20px;
+}
+
+/* MAIN BUTTON */
+
+.app > button {
+  display: block;
+  margin: 0 auto 25px;
+
+  padding: 11px 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #4f46e5;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.app > button:hover {
+  background: #3730a3;
+}
+
+/* SUBJECT FORM */
+
+.subject-form {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto 25px;
+
+  padding: 20px;
+
+  background: white;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  gap: 10px;
+}
+
+.subject-form input {
+  flex: 1;
+  padding: 11px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+
+  font-size: 15px;
+}
+
+.subject-form button {
+  padding: 11px 18px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #16a34a;
+  color: white;
+}
+
+/* =========================
+   DARK THEME
+========================= */
+
+body.dark-theme {
+  background: #111827;
+  color: #f9fafb;
+}
+
+body.dark-theme .app {
+  background: #111827;
+  color: #f9fafb;
+}
+
+body.dark-theme .app > h1,
+body.dark-theme .app > h2 {
+  color: #f9fafb;
+}
+
+/* Dashboard */
+
+body.dark-theme .dashboard .card {
+  background: #1f2937;
+  color: #f9fafb;
+}
+
+body.dark-theme .dashboard .card h3 {
+  color: #e5e7eb;
+}
+
+body.dark-theme .dashboard .card h1 {
+  color: #818cf8;
+}
+
+body.dark-theme .dashboard .card p {
+  color: #cbd5e1;
+}
+
+/* Subject form */
+
+body.dark-theme .subject-form {
+  background: #1f2937;
+}
+
+body.dark-theme .subject-form input {
+  background: #374151;
+  color: white;
+  border-color: #6b7280;
+}
+
+body.dark-theme .subject-form input::placeholder {
+  color: #9ca3af;
+}
+
+/* Subject cards */
+
+body.dark-theme .subject-card {
+  background: #1f2937;
+  color: white;
+}
+
+body.dark-theme .subject-info h3 {
+  color: white;
+}
+
+body.dark-theme .subject-info p {
+  color: #d1d5db;
+}
+
+/* Exam cards */
+
+body.dark-theme .exam-card {
+  background: #1f2937;
+  color: white;
+}
+
+body.dark-theme .exam-card h3 {
+  color: white;
+}
+
+body.dark-theme .exam-card p {
+  color: #d1d5db;
+}
+
+/* Tasks */
+
+body.dark-theme .task-card {
+  background: #1f2937;
+  color: white;
+}
+
+body.dark-theme .task-content span {
+  color: white;
+}
+
+body.dark-theme .task-summary {
+  color: #d1d5db;
+}
+
+/* Timetable */
+
+body.dark-theme .study-session {
+  background: #1f2937;
+  color: white;
+}
+
+body.dark-theme .study-session h3 {
+  color: white;
+}
+
+body.dark-theme .study-session p {
+  color: #d1d5db;
+}
+
+/* Pomodoro */
+
+body.dark-theme .pomodoro {
+  background: #1f2937;
+  color: white;
+}
+
+/* Progress */
+
+body.dark-theme .progress-tracker {
+  background: #1f2937;
+  color: white;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .app > h1 {
+    font-size: 28px;
+    padding: 25px 15px;
+  }
+
+  .subject-form {
+    flex-direction: column;
+  }
+
+  .subject-form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .app > h1 {
+    font-size: 24px;
+  }
+}
+/* =========================
+   FINAL APP POLISH
+========================= */
+
+section {
+  scroll-margin-top: 90px;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 25px 20px 10px;
+}
+
+.hero-section h1 {
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+body.dark-theme .hero-section p {
+  color: #cbd5e1;
+}
+
+#subjects {
+  padding-top: 10px;
+}
+
+#subjects > h2 {
+  margin-top: 30px;
+}
+
+#timetable,
+#timer,
+#progress {
+  width: 100%;
+}
+
+section {
+  animation: sectionAppear 0.4s ease;
+}
+
+@keyframes sectionAppear {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
